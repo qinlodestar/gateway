@@ -20,8 +20,10 @@ local _M = {}
         if is_gray == "1"  then
             return ngx.exec("@test1_gray_servers")
         else 
-            ngx.log(ngx.ERR, "test 1 into online")
-        --    return ngx.exec("@test1_online_servers")
+            ngx.log(ngx.ALERT, "test1 into online")
+            ngx.say("online ok")
+            --正式跳转请取消打印
+            --return ngx.exec("@test1_online_servers")
         end
     end
 
