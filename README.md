@@ -4,6 +4,9 @@
 文件说明：
 ====
 lua/conf/config.lua 作为配置文件，通过软连接在区分不同环境的服务器
+
 ngx_conf/domain 作为nginx的server的配置文件，通过软连接在区分不同环境的域名
+
 upstream作为nginx proxy 分发的服务器配置
+
 dispatch.lua 作为入口文件，通过子域名的前缀作为分发。比如test1.3cheng.cn，那么通过test1.lua作为具体的分发处理文件
