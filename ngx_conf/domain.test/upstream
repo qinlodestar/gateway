@@ -1,5 +1,5 @@
 lua_code_cache off;
-lua_package_path "/usr/local/nginx/public/lua/lualib/lib/?.lua;/usr/local/nginx/public/lua/?.lua;;";
+lua_package_path "/usr/local/nginx/gateway/lua/lualib/lib/?.lua;/usr/local/nginx/gateway/lua/?.lua;;";
 
 upstream test1_gray_servers{
     ip_hash;

@@ -20,6 +20,7 @@ local _M = {}
         if is_gray == "1"  then
             return ngx.exec("@test1_gray_servers")
         else 
+            ngx.log(ngx.ERR, "test 1 into online")
         --    return ngx.exec("@test1_online_servers")
         end
     end
