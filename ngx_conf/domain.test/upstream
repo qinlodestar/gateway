@@ -1,0 +1,11 @@
+lua_code_cache off;
+lua_package_path "/usr/local/nginx/public/lua/lualib/lib/?.lua;/usr/local/nginx/public/lua/?.lua;;";
+
+upstream test1_gray_servers{
+    ip_hash;
+    server 127.0.0.1:10001;
+}
+upstream test1_online_servers{
+    ip_hash;
+    server 127.0.0.1:10002;
+}
